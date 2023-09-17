@@ -2,7 +2,6 @@
 FROM node:7
 ADD app.js /app.js
 ENTRYPOINT ["node"]CMD ["app.js"]
-docker run crissy crissy.js
 # Entrypoint is advantageous when building applications that use same commands all the time. A good example: when running javascript the executable 
 # enviroment is node.js so in this situation it is advantageous to use entypoint to define the command node
 # CMD is always ignored by the docker daemon and therefore it is advantageous when building applications that use different commands all the time. 
